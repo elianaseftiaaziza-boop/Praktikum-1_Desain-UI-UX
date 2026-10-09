@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Kelompok 18 - Hitam Putih</title>
+    <style>
+        /* Desain Monokrom / Hitam Putih */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Header Hitam Putih */
+        header {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 20px 40px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 2px solid #000000;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 32px;
+            color: #000000;
+        }
+        .hero p {
+            color: #333333;
+            margin: 8px 0 0 0;
+            font-size: 16px;
+        }
+
+        /* Intro Box */
+        .intro-box {
+            background: #ffffff;
+            margin: 30px auto;
+            width: 90%;
+            max-width: 1050px;
+            padding: 20px 25px;
+            border: 2px solid #000000;
+        }
+        .intro-box strong {
+            color: #000000;
+            font-size: 15px;
+        }
+        .intro-box p {
+            margin: 8px 0 0 0;
+            color: #333333;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* Container Grid Kartu Anggota */
+        .container {
+            width: 90%;
+            max-width: 1050px;
+            margin: 0 auto 50px auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        /* Kartu Anggota */
+        .card {
+            background: #ffffff;
+            border: 2px solid #000000;
+            padding: 25px;
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        /* Posisi Anggota 5 di Tengah Bawah */
+        .card-center {
+            grid-column: 1 / -1;
+            max-width: 500px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .card-header {
+            width: 100%;
+            border-bottom: 1px solid #000000;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+        }
+        .card-header h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #000000;
+        }
+
+        /* Kotak Foto Profil */
+        .foto-box {
+            width: 130px;
+            height: 160px;
+            background-color: #ffffff;
+            border: 2px solid #000000;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+        .foto-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Styling Biodata agar Titik Dua Rata */
+        .biodata-text {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #000000;
+            width: 100%;
+        }
+        .biodata-text span.label {
+            display: inline-block;
+            width: 105px;
+        }
+
+        /* Footer Hitam Putih */
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: 60px;
+        }
+
+        /* Responsif untuk HP */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .card-center {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Kelompok 18</h1>
+        <p>Desain UI/UX</p>
+    </div>
+
+    <!-- Intro Box -->
+    <div class="intro-box">
+        <strong>Selamat Datang!</strong> 
+        <p>Selamat datang di halaman web profil kelompok kami. Website ini dibuat sebagai pemenuhan tugas praktikum mata kuliah Desain UI/UX.</p>
+    </div>
+
+    <!-- Layout Anggota Kelompok (Total 5 Orang) -->
+    <div class="container">
+        
+        <!-- Anggota 1 -->
+        <div class="card">
+            <div class="foto-box">
+                <img src="assets/img/foto 1.jpeg" alt="Foto Anggota 1">
+            </div>
+            <div style="flex-grow: 1;">
+                <div class="card-header">
+                    <h3>Anggota 1</h3>
+                </div>
+                <div class="biodata-text">
+                    <div><span class="label">Nama</span> : Seftia Aziza Eliana</div>
+                    <div><span class="label">Nim</span> : 0110226087</div>
+                    <div><span class="label">Program studi</span> : Teknik Informatika</div>
+                    <div><span class="label">TTL</span> : Depok, 13 Juni 2007</div>
+                    <div><span class="label">Hobi</span> : Olahraga</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Anggota 2 -->
+        <div class="card">
+            <div class="foto-box">
+                <img src="assets/img/foto 2.jpeg" alt="Foto Anggota 2">
+            </div>
+            <div style="flex-grow: 1;">
+                <div class="card-header">
+                    <h3>Anggota 2</h3>
+                </div>
+                <div class="biodata-text">
+                    <div><span class="label">Nama</span> : Sabrina Nova Azahra</div>
+                    <div><span class="label">Nim</span> : 0110226101</div>
+                    <div><span class="label">Program studi</span> : Teknik Informatika</div>
+                    <div><span class="label">TTL</span> : Bekasi, 19 November 2007</div>
+                    <div><span class="label">Hobi</span> : Main di lumpur</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Anggota 3 -->
+        <div class="card">
+            <div class="foto-box">
+                <img src="assets/img/foto 3.jpeg" alt="Foto Anggota 3">
+            </div>
+            <div style="flex-grow: 1;">
+                <div class="card-header">
+                    <h3>Anggota 3</h3>
+                </div>
+                <div class="biodata-text">
+                    <div><span class="label">Nama</span> : Siti Naelatul Yasroh</div>
+                    <div><span class="label">Nim</span> : 0110226109</div>
+                    <div><span class="label">Program studi</span> : Teknik Informatika</div>
+                    <div><span class="label">TTL</span> : Bogor, 31 Januari 2007</div>
+                    <div><span class="label">Hobi</span> : Gambar</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Anggota 4 -->
+        <div class="card">
+            <div class="foto-box">
+                <img src="assets/img/foto 4.jpeg" alt="Foto Anggota 4">
+            </div>
+            <div style="flex-grow: 1;">
+                <div class="card-header">
+                    <h3>Anggota 4</h3>
+                </div>
+                <div class="biodata-text">
+                    <div><span class="label">Nama</span> : Rizqullah Izzatul Ibad</div>
+                    <div><span class="label">Nim</span> : 0110226006</div>
+                    <div><span class="label">Program studi</span> : Teknik Informatika</div>
+                    <div><span class="label">TTL</span> : Tangerang, 11 Januari 2007</div>
+                    <div><span class="label">Hobi</span> : Membaca</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Anggota 5 (Di Tengah Bawah) -->
+        <div class="card card-center">
+            <div class="foto-box">
+                <img src="assets/img/foto 5.jpeg" alt="Foto Anggota 5">
+            </div>
+            <div style="flex-grow: 1;">
+                <div class="card-header">
+                    <h3>Anggota 5</h3>
+                </div>
+                <div class="biodata-text">
+                    <div><span class="label">Nama</span> : Riefky Gus Maula</div>
+                    <div><span class="label">Nim</span> : 0110226016</div>
+                    <div><span class="label">Program studi</span> : Teknik Informatika</div>
+                    <div><span class="label">TTL</span> : Depok, 13 Maret 2008</div>
+                    <div><span class="label">Hobi</span> : Bermain Bebek</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Kelompok 18 - STT-NF. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
